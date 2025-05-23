@@ -1,0 +1,31 @@
+# Network Traffic Analysis Using Wireshark
+
+This project demonstrates network security testing using tools like Nmap, Hydra, and Nslookup on Kali Linux while capturing and analyzing the network traffic with Wireshark.
+
+## Tools & Scripts
+
+### 🔹 Nmap
+- **Purpose**: Scans for open ports on the target system.
+- **Script**: `nmap_scan.sh`
+- **Command**: `nmap -sS 192.168.0.113`
+
+### 🔹 Hydra
+- **Purpose**: Performs brute-force attack on SSH login.
+- **Script**: `hydra_ssh.sh`
+- **Command**: `hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.0.113 ssh`
+
+### 🔹 Nslookup
+- **Purpose**: DNS resolution testing.
+- **Script**: `dns_lookup.sh`
+- **Command**: `nslookup facebook.com`
+
+## Instructions
+
+1. Ensure tools are installed: `nmap`, `hydra`, `dnsutils`.
+2. Give execute permission: `chmod +x *.sh`
+3. Run each script in terminal.
+4. Observe and analyze traffic using Wireshark on Kali.
+
+## Author
+**Aum Panchal**  
+**Reg No**: 22BCE8203
